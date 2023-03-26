@@ -1,0 +1,431 @@
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body class="btn btn-secondary">
+    <h1>This is Bootstrap cdn</h1>
+    <h1 style="color:brown">Alerts</h1>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+      </div>
+      <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+      </div>
+      <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+      </div>
+      <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+      </div>
+      <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+      </div>
+
+      <h1 style="color:blue">Badge</h1>
+      <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+      <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+      <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+      <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+      <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+      <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+
+
+      <h1 style="color:aqua">Breadcrumb</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+
+
+
+      <h1 style="color:black">Buttons</h1>
+      <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+
+
+    <h1 style="color:blueviolet">Button group</h1>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+      </div>
+
+
+
+      <h1 style="color:orange">Card</h1>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/Rakul.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rakul Preeth Singh</h5>
+          <p class="card-text">Rakul is beatiful heroine and her dance is Awesome.</p>
+          <a href="https://www.bing.com/search?q=rakul+saree+images&cvid=b3886e5414704e41b8d9e636cabf33bd&aqs=edge.1.69i64i450l8.4833j0j4&FORM=ANAB01&PC=HCTS" class="btn btn-primary">About Rakul</a>
+        </div>
+      </div>
+
+
+
+      <h1 style="color:brown">Carousel</h1>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="{% static 'images/megastar.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/pspk.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/ram charan.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+
+
+      <h1 style="color:green">Collapse</h1>
+      <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+
+
+
+      <h1 style="color:black">Dropdowns</h1>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://www.google.com/search?rlz=1C1RXQR_enIN1039IN1040&sxsrf=APwXEdfFflaslDstvAvUYmGYvczxSPnhtA:1679818016994&q=dropdowns+images&tbm=isch&so">Action</a>
+          <a class="dropdown-item" href="https://www.google.com/search?q=dropdownload+images&tbm=isch&hl=en&chips=q:dropdownload+images,online_chips:hd+wallpaper:zFclVD75Wek%3D,online_chips:nature:sKt8182d">Another action</a>
+          <a class="dropdown-item" href="https://www.google.com/search?q=dropdownload+images&tbm=isch&chips=q:dropdownload+images,online_chips:hd+wallpaper:zFclVD75Wek%3D&rlz=1C1RXQR_enIN1039IN1040&hl=en&">Something else here</a>
+        </div>
+      </div>
+
+
+
+      <h1 style="color:aquamarine">Forms</h1>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+      <h1 style="color:red">Input group</h1>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+      </div>
+      
+      <label for="basic-url">Your vanity URL</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <div class="input-group-append">
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
+      
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">With textarea</span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+
+
+
+
+      <h1 style="color:blue">Jumbotron</h1>
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+
+
+
+      <h1 style="color:black">List group</h1>
+      <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+
+
+
+      <h1 style="color:blueviolet">Media object</h1>
+      <div class="media">
+        <img src="{% static 'images/sneha.jpg' %}" class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0">Sneha</h5>
+          <p>sneha is beutiful heroine and she is very tredittional.she is acting very well and beautiful smile.I am so Interested her movies like sankranti,venki,priyamaina neeku,sriramadaasu.This movies are very wonderful.</p>
+        </div>
+      </div>
+
+      
+
+      <h1 style="color:yellow">Modal</h1>
+      <div class="modal-body">
+        <h5>Popover in a modal</h5>
+        <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+        <hr>
+        <h5>Tooltips in a modal</h5>
+        <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+      </div>
+
+
+      <h1 style="color:brown">Navs</h1>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+
+
+
+      <h1 style="color:black">Navbar</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+      <h1 style="color:orangered">Pagination</h1>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="https://www.google.com/search?rlz=1C1RXQR_enIN1039IN1040&sxsrf=APwXEddg8IA9HnFoI5-HfFfCRFD4g2_zDQ:1679821527877&q=pokemon+images&tbm=isch&source=univ">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="https://www.google.com/search?rlz=1C1RXQR_enIN1039IN1040&sxsrf=APwXEddg8IA9HnFoI5-HfFfCRFD4g2_zDQ:1679821527877&q=pokemon+images&tbm=isch&source=univ">1</a></li>
+          <li class="page-item"><a class="page-link" href="https://www.google.com/search?q=doraemon+images&tbm=isch&hl=en&chips=q:doraemon,g_1:wallpaper:NyFgtxCy0Wg%3D&rlz=1C1RXQR_enIN1039IN1040&sa=X&ved=2ahUKEwiUosKdn_n9AhV42HMB">2</a></li>
+          <li class="page-item"><a class="page-link" href="https://www.google.com/search?q=doraemon+images&tbm=isch&hl=en&chips=q:doraemon,g_1:wallpaper:NyFgtxCy0Wg%3D,g_1:nobita:R9JlBlwR3Qk%3D&rlz=1C1RXQR_enIN1039IN1040&sa=X&ved=2ahU">3</a></li>
+          <li class="page-item"><a class="page-link" href="https://www.google.com/search?q=motupatlu+images&tbm=isch&ved=2ahUKEwi6gfqqn_n9AhVP-XMBHWWUCBoQ2-cCegQIABAA&oq=motupatlu+images&gs_lcp=CgNpbWcQARgAMgUIABCABDIGCAAQBRAeOgQIIxAnOgYIABAHEB46BwgAEIoFEEM6CggAEIoFELEDEEM6CAgAEIAEELED">Next</a></li>
+        </ul>
+      </nav>
+
+
+
+      <h1 style="color:pink">Popovers</h1>
+    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+
+
+    <h1 style="color:black">Progress</h1>
+    <div class="progress">
+      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+
+
+
+    <h1 style="color:aqua">Scrollspy</h1>
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="https://www.google.com/search?rlz=1C1RXQR_enIN1039IN1040&sxsrf=APwXEdcp0lXR6iAERP88hcihqQjVJMuW6g:1679815796415&q=python+logo&tbm=isch&source=univ&fir=CVQvyaOpjfIJxM%252CX6b2dkbhySknGM">Python</a>
+        <a class="list-group-item list-group-item-action" href="https://www.google.com/search?rlz=1C1RXQR_enIN1039IN1040&sxsrf=APwXEdflPszsRfKEDyXUClMlM1KPhaMDxA:1679815881190&q=java+logo&tbm=isch&source=univ&fir=qt1xQyXSEQHuTM%252C20P0dWoJnqralM%252C_%253BT-n0gNq6HrB-YM%252Cty8cA0ylPEPayM%252C_%253BehMVzt4lwW5xlM%252C_jtr1gzOy6hTiM%252C_%253BTIgnlMH0LCaHzM%252C20P0dWoJnqralM%252C_">Java</a>
+        <a class="list-group-item list-group-item-action" href="https://www.google.com/search?rlz=1C1RXQR_enIN1039IN1040&sxsrf=APwXEddZko65KaxqWWZ3iCVhW7ltAa9WXg:1679817706065&q=mern+logo&tbm=isch&source=univ&fir=z6X73_UQR">Mern</a>
+        <a class="list-group-item list-group-item-action" href="https://www.google.com/search?q=aws+logo&rlz=1C1RXQR_enIN1039IN1040&sxsrf=APwXEddSvPqo37IufcGsDB0iWlLlZaFqrA:1679817181372&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjx94fTjvn9AhVYVWwGHcFpDPsQ_AUoAX">Aws</a>
+      </div>
+      <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+        <h4 id="list-item-1">Python</h4>
+        <p>python is dynamically typed language.</p>
+        <h4 id="list-item-2">Java</h4>
+        <p>Java is Statically typed language.</p>
+        <h4 id="list-item-3">Mern</h4>
+        <p>React js,Node js is there in Mern.</p>
+        <h4 id="list-item-4">Aws</h4>
+        <p>Aws fullform Amazon web services.</p>
+      </div>
+
+
+
+
+      <h1 style="color:blue">Spinners</h1>
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-secondary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-success" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-info" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-border text-dark" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+
+
+
+      <h1 style="color:greenyellow">Toasts</h1>
+      <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+    <div class="toast-header">
+      <img src="..." class="rounded mr-2" alt="...">
+      <strong class="mr-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+   
+
+      <h1 style="color:orchid">Tooltips</h1>
+      <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip">
+        <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+      </span>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
